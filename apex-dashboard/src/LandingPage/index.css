@@ -1,0 +1,1283 @@
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around; 
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 3; 
+  }
+  
+  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  .hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+  
+  .landingPage {
+    height: 95.8vh;
+    width: 97.8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 1;
+    position: relative; 
+  }
+  
+  .landingPage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/Images/african-teachers-engaged-in-a-classroom-setting-actively-utilizing-various-assistive-technologies-s-652042194 (copy).jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* z-index: 0; */
+  }
+  
+  /* .logo {
+    width: 100px;
+    height: 100px;
+    margin-right: -10%;
+  } */
+.logo{
+  width: 100px;
+  height: 100px;
+  /* margin-right: -10% */
+  transform: translateX(-569%);
+  /* transform: translateY(-45%); */
+}
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+    width: 100%;
+    padding: 10px 20px;
+    color: white;
+    z-index: 2;
+   
+  }
+  
+  .navigation nav ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+  }
+  
+  .navigation nav ul li {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .landing-page-texts {
+    font-weight: bolder;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 2;
+    margin-top: 0%;
+  }
+  
+  .explore-button {
+    z-index: 1;
+  }
+  
+  button {
+    background-color: red;
+    color: white;
+    align-self: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 18px;
+    border: solid transparent;
+    border-radius: 21px;
+    margin-top: 50%;
+  }
+  .button-link{
+    text-decoration: none;
+    color: white;
+  }
+  @media screen and (min-width:240px) and (max-width: 340px){
+    .hamburger-menu {
+      display: block;
+      margin-top: -5%; 
+      margin-right: -5%;
+  }
+  .logo {
+    width: 45px;
+    height: 40px;
+    margin-top: -5%;
+    margin-left: -5%;
+  }
+  
+  .nav-links {
+      display: none; 
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 2; 
+  }
+  
+  .nav-links.open {
+      display: block;
+  }
+  
+  .nav-links ul {
+      list-style-type: none;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: 25px;
+  
+  }
+  
+  .nav-links ul li {
+      color: white;
+      margin-top: 25%;
+      cursor: pointer;
+  }
+  .landing-page-texts{
+    text-align: center;
+    font-size: 47.5px;
+    margin-top: 16%;
+    z-index: 1;
+  }
+  .landingPage {
+    height: 100%;
+    width: 85.6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative; 
+  }
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('/public/Images/african-teachers-engaged-in-a-classroom-setting-actively-utilizing-various-assistive-technologies-s-652042194.jpeg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+  button {
+    background-color: red;
+    color: white;
+    align-self: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 15px;
+    border: solid transparent;
+    border-radius: 21px;
+    margin-top: 37%;
+    margin-bottom: 6%;
+    z-index: 1;
+  }
+  
+  
+  
+  }
+  @media screen and (min-width:341px) and (max-width: 370px){
+    .hamburger-menu {
+      display: block;
+      margin-top: -5%; 
+      margin-right: -5%;
+  }
+  .logo {
+    width: 45px;
+    height: 40px;
+    margin-top: -5%;
+    margin-left: -3%;
+  }
+  
+  .nav-links {
+      display: none; 
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 100vw;
+      height: 100vh;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 2; 
+  }
+  
+  .nav-links.open {
+      display: block;
+  }
+  
+  .nav-links ul {
+      list-style-type: none;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: 25px;
+  
+  }
+  
+  .nav-links ul li {
+      color: white;
+      margin-top: 25%;
+      cursor: pointer;
+  }
+  .landing-page-texts{
+    text-align: center;
+    font-size: 55px;
+    margin-top: 10%;
+    z-index: 1;
+  }
+  .landingPage {
+    height: 94.6vh;
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative; 
+  }
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('/public/Images/african-teachers-engaged-in-a-classroom-setting-actively-utilizing-various-assistive-technologies-s-652042194.jpeg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+  button {
+    background-color: red;
+    color: white;
+    align-self: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 15px;
+    border: solid transparent;
+    border-radius: 21px;
+    margin-top: 37%;
+    z-index: 1;
+  }
+  
+    
+  } 
+  @media screen and (min-width:371px) and (max-width: 388px){
+    .hamburger-menu {
+      display: block;
+      margin-top: -5%; 
+      margin-right: -5%;
+  }
+  .logo {
+    width: 45px;
+    height: 40px;
+    margin-top: -5%;
+    margin-left: -3%;
+  }
+  
+  .nav-links {
+      display: none; 
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 100vw;
+      height: 100vh;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 2; 
+  }
+  
+  .nav-links.open {
+      display: block;
+  }
+  
+  .nav-links ul {
+      list-style-type: none;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: 25px;
+  
+  }
+  
+  .nav-links ul li {
+      color: white;
+      margin-top: 25%;
+      cursor: pointer;
+  }
+  .landing-page-texts{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 10%;
+    z-index: 1;
+  }
+  .landing-page-texts{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 13.5%;
+    z-index: 1;
+  }
+  .landingPage {
+    height: 94.6%;
+    width: 89.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative; 
+  }
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('/public/Images/african-teachers-engaged-in-a-classroom-setting-actively-utilizing-various-assistive-technologies-s-652042194.jpeg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  } 
+  button {
+    background-color: red;
+    color: white;
+    align-self: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 15px;
+    border: solid transparent;
+    border-radius: 21px;
+    margin-top: 13.5%;
+    margin-bottom: 12%;
+    z-index: 1;
+  }
+  
+  }
+  @media screen and (min-width:389px) and (max-width: 400px){
+    .hamburger-menu {
+      display: block;
+      margin-top: -5%; 
+      margin-right: -5%;
+  }
+  .logo {
+    width: 45px;
+    height: 40px;
+    margin-top: -5%;
+    margin-left: -3%;
+  }
+  
+  .nav-links {
+      display: none; 
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 100vw;
+      height: 100vh;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 2; 
+  }
+  
+  .nav-links.open {
+      display: block;
+  }
+  
+  .nav-links ul {
+      list-style-type: none;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: 25px;
+  
+  }
+  
+  .nav-links ul li {
+      color: white;
+      margin-top: 25%;
+      cursor: pointer;
+  }
+  .landing-page-texts{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 10%;
+    z-index: 1;
+  }
+  .landing-page-texts{
+    text-align: center;
+    font-size: 63px;
+    margin-top: 23.6%;
+    z-index: 1;
+  }
+  .landingPage {
+    height: 94.7%;
+    width: 89.4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative; 
+  }
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('/public/Images/african-teachers-engaged-in-a-classroom-setting-actively-utilizing-various-assistive-technologies-s-652042194.jpeg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  } 
+  button {
+    background-color: red;
+    color: white;
+    align-self: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 15px;
+    border: solid transparent;
+    border-radius: 21px;
+    margin-top: 35%;
+    margin-bottom: 15%;
+    z-index: 1;
+  }
+  
+  
+  }
+  @media screen and (min-width:401px) and (max-width: 413px){
+    .hamburger-menu {
+      display: block;
+      margin-top: -3%; 
+      margin-right: -5%;
+  }
+  .logo {
+    width: 45px;
+    height: 40px;
+    margin-top: -3%;
+    margin-left: -3%;
+  }
+  
+  .nav-links {
+      display: none; 
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 100vw;
+      height: 100vh;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 2; 
+  }
+  
+  .nav-links.open {
+      display: block;
+  }
+  
+  .nav-links ul {
+      list-style-type: none;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: 25px;
+  
+  }
+  
+  .nav-links ul li {
+      color: white;
+      margin-top: 25%;
+      cursor: pointer;
+  }
+  .landing-page-texts{
+    text-align: center;
+    font-size: 69px;
+    margin-top: 13%;
+    z-index: 1;
+  }
+  .landingPage {
+    height: 94.7%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative; 
+  }
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('/public/Images/african-teachers-engaged-in-a-classroom-setting-actively-utilizing-various-assistive-technologies-s-652042194.jpeg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  } 
+  button {
+    background-color: red;
+    color: white;
+    align-self: center;
+    align-items: center;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 15px;
+    border: solid transparent;
+    border-radius: 21px;
+    margin-top: 35%;
+    margin-bottom: 33%;
+    z-index: 1;
+  }
+  
+  
+  }
+  @media screen and (min-width:414px) and (max-width: 428px){
+  .hamburger-menu {
+      display: block;
+      margin-top: -3%; 
+      margin-right: -5%;
+  }
+  .logo {
+    width: 45px;
+    height: 40px;
+    margin-top: -3%;
+    margin-left: -3%;
+  }
+  
+  .nav-links {
+      display: none; 
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 100vw;
+      height: 100vh;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 2; 
+  }
+  
+  .nav-links.open {
+      display: block;
+  }
+  
+  .nav-links ul {
+      list-style-type: none;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: 25px;
+  
+  }
+  
+  .nav-links ul li {
+      color: white;
+      margin-top: 25%;
+      cursor: pointer;
+  }
+  .landing-page-texts{
+    text-align: center;
+    font-size: 67px;
+    margin-top: 12.3%;
+    z-index: 1;
+  }
+  .landingPage {
+    height: 94.7%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative; 
+  }
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('/public/Images/african-teachers-engaged-in-a-classroom-setting-actively-utilizing-various-assistive-technologies-s-652042194.jpeg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  } 
+  button {
+    background-color: red;
+    color: white;
+    align-self: center;
+    align-items: center;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 15px;
+    border: solid transparent;
+    border-radius: 21px;
+    margin-top: 35%;
+    margin-bottom: 33%;
+    z-index: 1;
+  }
+  
+  
+  }
+  @media screen and (min-width:429px) and (max-width: 500px){
+    .hamburger-menu {
+      display: block;
+      margin-top: -3%; 
+      margin-right: -5%;
+  }
+  .logo {
+    width: 50px;
+    height: 47px;
+    margin-top: -3%;
+    margin-left: -3%;
+  }
+  
+  .nav-links {
+      display: none; 
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 100vw;
+      height: 100vh;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 2; 
+  }
+  
+  .nav-links.open {
+      display: block;
+  }
+  
+  .nav-links ul {
+      list-style-type: none;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: 30px;
+  
+  }
+  
+  .nav-links ul li {
+      color: white;
+      margin-top: 25%;
+      cursor: pointer;
+  }
+  .landing-page-texts{
+    text-align: center;
+    font-size: 69px;
+    margin-top: 17%;
+    z-index: 1;
+  }
+  .landingPage {
+    height: 94.7%;
+    width: 90.8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative; 
+  }
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('/public/Images/african-teachers-engaged-in-a-classroom-setting-actively-utilizing-various-assistive-technologies-s-652042194.jpeg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  } 
+  button {
+    background-color: red;
+    color: white;
+    align-self: center;
+    align-items: center;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 15px;
+    border: solid transparent;
+    border-radius: 21px;
+    margin-top: 35%;
+    margin-bottom: 33%;
+    z-index: 1;
+  }
+  
+  }
+  @media screen and (min-width:501px) and (max-width: 700px){
+  .hamburger-menu {
+      display: block;
+      margin-top: -3%; 
+      margin-right: 0;
+  }
+  .hamburger-menu .bar {
+    width: 29px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  .logo {
+    width: 50px;
+    height: 47px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  
+  .nav-links {
+      display: none; 
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      background-color: rgba(0, 0, 0, 0.95);
+      width: 100vw;
+      height: 100vh;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 2; 
+  }
+  
+  .nav-links.open {
+      display: block;
+  }
+  
+  .nav-links ul {
+      list-style-type: none;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: 25px;
+  
+  }
+  
+  .nav-links ul li {
+      color: white;
+      margin-top: 19%;
+      cursor: pointer;
+  }
+  .landing-page-texts{
+    text-align: center;
+    font-size: 58px;
+    margin-top: 16.5%;
+    z-index: 1;
+  }
+  .landingPage {
+    height: 94.7%;
+    width: 92.2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative; 
+  }
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('/public/Images/african-teachers-engaged-in-a-classroom-setting-actively-utilizing-various-assistive-technologies-s-652042194.jpeg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  } 
+  button {
+    background-color: red;
+    color: white;
+    align-self: center;
+    align-items: center;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 15px;
+    border: solid transparent;
+    border-radius: 20px;
+    margin-top: 28%;
+    margin-bottom: 25.3%;
+    z-index: 1;
+  }
+  
+  }
+  @media screen and (min-width:701px) and (max-width: 800px){
+  .hamburger-menu {
+      display: block;
+      margin-top: -3%; 
+      margin-right: 0;
+  }
+  .hamburger-menu .bar {
+    width: 32px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  .logo {
+    width:75px;
+    height: 70px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  
+  .nav-links {
+      display: none; 
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 100vw;
+      height: 100vh;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 2; 
+  }
+  
+  .nav-links.open {
+      display: block;
+  }
+  
+  .nav-links ul {
+      list-style-type: none;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: 29px;
+  
+  }
+  
+  .nav-links ul li {
+      color: white;
+      margin-top: 17%;
+      cursor: pointer;
+  }
+  .landing-page-texts{
+    text-align: center;
+    font-size: 86.5;
+    margin-top: 16.5%;
+    z-index: 1;
+  }
+  .landingPage {
+    height: 94.7%;
+    width: 94.6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative; 
+  }
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('/public/Images/african-teachers-engaged-in-a-classroom-setting-actively-utilizing-various-assistive-technologies-s-652042194.jpeg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  } 
+  button {
+    background-color: red;
+    color: white;
+    align-self: center;
+    align-items: center;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 15px;
+    border: solid transparent;
+    border-radius: 20px;
+    margin-top: 41%;
+    margin-bottom: 27%;
+    z-index: 1;
+  }
+  .hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-7px, 6px);
+  }
+  
+  .hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-7px, -5px);
+  }
+  
+  }
+  @media screen and (min-width:801px) and (max-width: 900px){
+  .hamburger-menu {
+      display: block;
+      margin-top: -3%; 
+      margin-right: 0;
+  }
+  .hamburger-menu .bar {
+    width: 36px;
+    height: 4.5px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  .logo {
+    width: 85px;
+    height: 75px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  
+  .nav-links {
+      display: none; 
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 100vw;
+      height: 100vh;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 2; 
+  }
+  
+  .nav-links.open {
+      display: block;
+  }
+  
+  .nav-links ul {
+      list-style-type: none;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: 25px;
+  
+  }
+  
+  .nav-links ul li {
+      color: white;
+      margin-top: 22%;
+      cursor: pointer;
+  }
+  .landing-page-texts{
+    text-align: center;
+    font-size: 93px;
+    margin-top: 24%;
+    z-index: 1;
+  }
+  .landingPage {
+    height: 94.7%;
+    width: 94.95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative; 
+  }
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('/public/Images/african-teachers-engaged-in-a-classroom-setting-actively-utilizing-various-assistive-technologies-s-652042194.jpeg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  } 
+  button {
+    background-color: red;
+    color: white;
+    align-self: center;
+    align-items: center;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 15px;
+    border: solid transparent;
+    border-radius: 20px;
+    margin-top: 50%;
+    margin-bottom: 57%;
+    z-index: 1;
+  }
+  }
+  @media (min-width: 901px) and (max-width: 1000px){
+    .hamburger-menu {
+      display: block;
+      margin-top: -3%; 
+      margin-right: 0;
+  }
+  .hamburger-menu .bar {
+    width: 39px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  .logo {
+    width: 85px;
+    height: 75px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  
+  .nav-links {
+      display: none; 
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      background-color: rgba(0, 0, 0, 0.9);
+      width: 100vw;
+      height: 100vh;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 2; 
+  }
+  
+  .nav-links.open {
+      display: block;
+  }
+  
+  .nav-links ul {
+      list-style-type: none;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: 39px;
+  
+  }
+  
+  .nav-links ul li {
+      color: white;
+      margin-top: 22%;
+      cursor: pointer;
+  }
+  .landing-page-texts{
+    text-align: center;
+    font-size: 113px;
+    /* margin-top: 24%; */
+    z-index: 1;
+  }
+  .landingPage {
+    height: 94.7%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative; 
+  }
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('/public/Images/african-teachers-engaged-in-a-classroom-setting-actively-utilizing-various-assistive-technologies-s-652042194.jpeg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  } 
+  button {
+    background-color: red;
+    color: white;
+    align-self: center;
+    align-items: center;
+    font-size: 34px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 15px;
+    border: solid transparent;
+    border-radius: 20px;
+    margin-top: 50%;
+    margin-bottom: 57%;
+    z-index: 1;
+  }
+  .hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+  
+  .hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -5px);
+  }
+  }
+  @media (min-width: 1001px) and (max-width: 1200px){
+    .logo {
+      width: 100px;
+      height: 75px;
+    }
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 27px;
+      width: 100%;
+      padding: 10px 20px;
+      color: white;
+      z-index: 2;
+     
+    }
+    button {
+      background-color: red;
+      color: white;
+      align-self: center;
+      align-items: center;
+      font-size: 34px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 14px 26px;
+      border: solid transparent;
+      border-radius: 20px;
+      margin-top: 5%;
+      margin-bottom: 57%;
+      z-index: 1;
+    }
+    .landing-page-texts{
+      text-align: center;
+      font-size: 60px;
+      /* margin-top: 24%; */
+      z-index: 1;
+    }
+  
+  }
+  @media (min-width: 1201px) and (max-width: 1300px){
+    .logo {
+      width: 100px;
+      height: 75px;
+    }
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 33px;
+      width: 100%;
+      padding: 10px 20px;
+      color: white;
+      z-index: 2;
+     
+    }
+    button {
+      background-color: red;
+      color: white;
+      align-self: center;
+      align-items: center;
+      font-size: 34px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 14px 26px;
+      border: solid transparent;
+      border-radius: 20px;
+      margin-top: 5%;
+      margin-bottom: 57%;
+      z-index: 1;
+    }
+    .landing-page-texts{
+      text-align: center;
+      font-size: 79px;
+      /* margin-top: 24%; */
+      z-index: 1;
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
