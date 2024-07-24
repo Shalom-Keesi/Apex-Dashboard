@@ -1,0 +1,54 @@
+
+.sidebar{
+    background-color: rgb(24,40,65);
+    margin-top: 0;
+    padding-bottom: 55px;
+    width: 24%;
+    
+}
+.overview-sidebar{
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-left: 2%;
+
+}
+.sidebar-texts{
+    color:white;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-left: 2%;
+
+}
+.courses{
+    color: red;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-left: 1%;
+
+}
+.logo{
+    margin-top: 4%;
+    margin-left: 3%;
+    width: 100px;
+    border: solid white;
+
+}
+.icon{
+    margin-left: 1%;
+}
+.apex-dashboard{
+    display: flex;
+}
+h1{
+    font-size: 35px;
+}
+h1{
+    font-size: 40px;
+}
+
+.graph{
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 1300px;
+}
